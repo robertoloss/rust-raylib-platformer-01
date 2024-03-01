@@ -24,6 +24,9 @@ pub struct Player {
     pub going_left: bool,
     pub on_platform: bool,
     pub platform_go_right: bool,
+    pub cling: bool,
+    pub on_wall: bool,
+    pub can_cling: bool,
 }
 
 #[derive(Debug, PartialEq)]
