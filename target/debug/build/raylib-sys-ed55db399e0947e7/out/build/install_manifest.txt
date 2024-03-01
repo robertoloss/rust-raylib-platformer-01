@@ -1,0 +1,9 @@
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-ed55db399e0947e7/out/lib/libraylib.a
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-ed55db399e0947e7/out/include/raylib.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-ed55db399e0947e7/out/include/rlgl.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-ed55db399e0947e7/out/include/physac.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-ed55db399e0947e7/out/include/raymath.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-ed55db399e0947e7/out/include/raudio.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-ed55db399e0947e7/out/lib/pkgconfig/raylib.pc
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-ed55db399e0947e7/out/lib/cmake/raylib/raylib-config-version.cmake
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-ed55db399e0947e7/out/lib/cmake/raylib/raylib-config.cmake
