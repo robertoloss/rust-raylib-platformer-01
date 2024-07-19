@@ -102,9 +102,9 @@ fn main() {
 
         if rl.is_key_pressed(KeyboardKey::KEY_Z) {
             player.velocity.y = -9.;
+            if player.on_wall { player.can_cling = false; }
             player.cling = false;
             player.jump_start = player.position.y;
-            if player.cling { player.can_cling = false; }
         }
         if rl.is_key_released(KeyboardKey::KEY_Z) && player.velocity.y < 0. {
             player.velocity.y -= player.velocity.y / 2.;
@@ -116,7 +116,6 @@ fn main() {
             player.cling = false;
         }
         if !player.cling {
-            println!("not clinging!");
             player.on_wall = false;
             player.gravity = gravity;
         }
@@ -141,6 +140,9 @@ fn main() {
             if !player.on_wall {
                 player.velocity.x = player.x_increment;
             }
+        }
+        if player.velocity.x > 0.0 && rl.is_key_down(KeyboardKey::KEY_LEFT) {
+            player.velocity.x = -player.x_increment; 
         }
         
 
@@ -169,7 +171,7 @@ fn main() {
         }
 
         
-        fn zero_gravity(player: &mut Player) {
+        fn stick_to_the_wall(player: &mut Player) {
             if player.cling {
                 player.gravity = 0.;
                 player.velocity.y = 0.;
@@ -186,11 +188,11 @@ fn main() {
                     }
                     Direction::Top => {}
                     Direction::Left => {
-                        zero_gravity(&mut player);
-                        println!("{} {}", player.gravity, rng.gen_range(1..=100))
+                        stick_to_the_wall(&mut player);
+                        //println!("{} {}", player.gravity, rng.gen_range(1..=100))
                     }                     
                     Direction::Right => {
-                        zero_gravity(&mut player);
+                        stick_to_the_wall(&mut player);
                     }
                     Direction::NoDirection => {}
                 }
@@ -198,20 +200,14 @@ fn main() {
         });
 
         let d = &mut rl.begin_drawing(&thread);
+
         d.clear_background(Color::BLACK);
         collisions.iter().for_each(|c| d.draw_rectangle_v(&c.position, &c.size, Color::BLUE));
         for i in 0..platforms.len() {
             let platform = &mut platforms[i];
-            let pos = Vector2 {
-                x: platform.position.x - 2.0,
-                y: platform.position.y
-            }; 
-            if i == 0 {
-                d.draw_rectangle_v(platform.position, platform.size, Color::PURPLE);
-            } else {
-                d.draw_rectangle_v(pos, platform.size, Color::PURPLE);
-            }
+            d.draw_rectangle_v(platform.position, platform.size, Color::PURPLE);
         }
         d.draw_rectangle_v(&player.position, &player.size, Color::MAROON);
+        d.draw_text(format!("pl.platf_go_right: {}",  player.platform_go_right).as_str(), 10, 10, 14, Color::YELLOW);
     }
 }

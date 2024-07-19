@@ -1,0 +1,9 @@
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-0c9dc0fbc821328f/out/lib/libraylib.a
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-0c9dc0fbc821328f/out/include/raylib.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-0c9dc0fbc821328f/out/include/rlgl.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-0c9dc0fbc821328f/out/include/physac.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-0c9dc0fbc821328f/out/include/raymath.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-0c9dc0fbc821328f/out/include/raudio.h
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-0c9dc0fbc821328f/out/lib/pkgconfig/raylib.pc
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-0c9dc0fbc821328f/out/lib/cmake/raylib/raylib-config-version.cmake
+/Users/Roberto/Dropbox/CODING/Rust/ray-game-1/target/debug/build/raylib-sys-0c9dc0fbc821328f/out/lib/cmake/raylib/raylib-config.cmake
